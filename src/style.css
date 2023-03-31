@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Josefin+Sans:wght@500&family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    background-color: #67e8f9;
+}
+
+.navheader {
+    display: flex;
+    max-width: 1024;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.navheader>ul>li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.navheader>ul>li>a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+
+.navheader>ul>li>a:hover {
+    color: black;
+}
+
+.active {
+    background-color: #818cf8;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+}
+
+.active:hover {
+    background-color: blue;
+}
+
+.navheader>h1 {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+}
+
+.sidenav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidenav>img {
+    width: 70px;
+}
+
+.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(./Images/fire.jfif);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home>h1 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.home>button {
+    padding: 15px 40px;
+    margin-top: 20px;
+    font-size: 1rem;
+    background-color: #67e8f9;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home>button:hover {
+    background-color: #818cf8;
+    color: white;
+}
+
+.about {
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.about>h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 30px;
+}
+
+.sideleft {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text>p {
+    width: 400px;
+    margin: 10px 20px;
+    font-size: 1.25rem;
+}
+
+.sideleft>img {
+    height: 300px;
+    box-shadow: -20px -30px 6px black;
+}
+
+span {
+    border-bottom: 1px solid #000;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 30px;
+}
+
+.text>button {
+    margin: 5px 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #67e8f9;
+}
+
+.text>button:hover {
+    background-color: #818cf8;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.sideright {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.sideright>h1 {
+    width: 300px;
+    line-height: 1.6;
+    text-shadow: 2px 5px 10px #888282;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 20px;
+}
+
+.vd>iframe {
+    width: 500px;
+    box-shadow: 20px -10px 5px #000;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 992px;
+    margin: auto;
+}
+
+.content>h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 30px;
+}
+
+.cardbody {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 400px;
+    margin: 10px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 10px 10px 20px #000;
+    background-color: #67e8f9;
+    border-radius: 10px 5px;
+}
+
+.card>img {
+    margin: 10px 25px;
+    height: 250px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.card>p {
+    width: 300px;
+}
+
+.card>h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 5px 15px;
+}
+
+.info {
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.info>button {
+    padding: 10px 25px;
+    background-color: #818cf8;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.info>button:hover {
+    background-color: blue;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact>h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 30px;
+}
+
+.contact>form {
+    box-shadow: 10px 10px 10px 5px gray;
+    margin-top: 50px;
+    background-color: #e8f0f7;
+    width: 678px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 75vh;
+}
+
+.formbody {
+    margin-top: 20px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control>input {
+    height: 40px;
+    width: 500px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25rem;
+}
+
+.form-control>textarea {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25rem;
+}
+
+.form-control>input:active {
+    border: none;
+}
+
+form>button {
+    margin-top: 10px;
+    padding: 10px 40px;
+    background-color: #67e8f9;
+    border: none;
+    color: #000;
+    font-size: 1rem;
+}
+
+form>button:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.foot {
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #67e8f9;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+}
+
+.footcontainer {
+    margin: 10px;
+    display: flex;
+
+}
+
+.element {
+    width: 300px;
+}
+
+.ellist ul>li {
+    list-style-type: none;
+}
+
+.ellist ul>li>a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.elsocial>ul>li>a:hover {
+    color: #67e8f9;
+    padding: 10px;
+
+}
+
+elsocial>ul>a {
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+}
+
+.elsocial {
+    display: flex;
+    flex-direction: column;
+}
+
+.elsocial>ul>a>i {
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.elsocial>ul>a>i:hover {
+    color: #67e8f9;
+}
+
+hr {
+    border: 1px solid #fff;
+    width: 500px;
+}
+
+.element>button {
+    padding: 10px 25px;
+    background-color: #67e8f9;
+    font-size: 1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+}
+
+.element>button:hover {
+    background-color: #fff;
+}
